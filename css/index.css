@@ -1,0 +1,320 @@
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Inconsolata Regular'), local('Inconsolata-Regular'), url(https://fonts.gstatic.com/s/inconsolata/v18/QldKNThLqRwH-OJ1UHjlKGlZ5q0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('VT323 Regular'), local('VT323-Regular'), url(https://fonts.gstatic.com/s/vt323/v11/pxiKyp0ihIEF2isfFJA.ttf) format('truetype');
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Inconsolata', monospace;
+  color: #d3d3d3;
+  font-size: 1.6rem;
+  background-color: #1a1a1a;
+}
+p,
+span,
+a,
+li,
+blockquote {
+  line-height: 1.4;
+}
+a {
+  color: #d3d3d3;
+  text-decoration: none;
+  border-bottom: 0.2em dotted #d3d3d3;
+  margin-bottom: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'VT323', monospace;
+}
+h1 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h5,
+h6 {
+  font-size: 1.5rem;
+}
+ul li {
+  list-style-type: square;
+  list-style-position: inside;
+}
+table {
+  border: 0.2em dotted #d3d3d3;
+  border-collapse: separate;
+  border-spacing: 1rem;
+}
+table th {
+  text-align: left;
+  font-weight: bolder;
+  font-size: 1.7rem;
+}
+main {
+  width: 41%;
+  max-width: 610px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  main {
+    width: 90%;
+  }
+}
+main header,
+main section {
+  margin: 35px 0;
+}
+main header {
+  margin: 42px 0;
+}
+main header nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main header nav a {
+  font-size: 2rem;
+}
+main #intro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  main #intro {
+    display: flex;
+    flex-direction: column;
+  }
+}
+main #intro .avatar {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+main #intro .avatar img {
+  filter: grayscale(1);
+}
+@media (max-width: 500px) {
+  main #intro .avatar img {
+    width: 50%;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 35px;
+  }
+}
+main #intro .intro-text {
+  width: 70%;
+}
+@media (max-width: 500px) {
+  main #intro .avatar,
+  main #intro .intro-text {
+    width: 100%;
+  }
+}
+main #intro .links {
+  margin-top: 3rem;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  main #intro .links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+main #about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  main #about {
+    display: flex;
+    flex-direction: column;
+  }
+}
+main #about div {
+  width: 45%;
+}
+@media (max-width: 500px) {
+  main #about div {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+main #history table {
+  width: 100%;
+}
+main .button {
+  text-decoration: none;
+}
+main footer {
+  margin-top: 80px;
+  text-align: center;
+}

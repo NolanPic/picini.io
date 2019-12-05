@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|VT323&display=swap');
+
+// Is this working?
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+html, body {
+    height: 100%;
+}
+
+// *** variables *** 
+@main-font: 'Inconsolata', monospace;
+@headings-font: 'VT323', monospace;
+@main-font-color: rgb(211, 211, 211);
+@main-font-size: 1.6rem;
+@nav-font-size: 2.0rem;
+@section-margin: 35px;
+@dotted-border: 0.2em dotted @main-font-color;
+
+// *** mixins ***
+.flex-row() {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.flex-column() {
+	display: flex;
+	flex-direction: column;
+}
+
+.bottom-bordered() {
+	border-bottom: @dotted-border;
+	margin-bottom: 1rem;
+}
+
+.bordered() {
+	border: @dotted-border;
+}
+
+// *** text ***
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: @main-font;
+	color: @main-font-color;
+	font-size: @main-font-size;
+	
+	background-color: rgb(26, 26, 26);
+}
+
+p, span, a, li, blockquote {
+	line-height: 1.4;
+}
+
+a {
+	color: @main-font-color;
+	text-decoration: none;
+	.bottom-bordered();
+}
+
+// headings
+h1, h2, h3, h4, h5, h6 {
+	font-family: @headings-font;
+}
+
+h1 {
+	font-size: 5rem;
+	margin-bottom: 2rem;
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+h5, h6 {
+	font-size: 1.5rem;
+}
+
+// lists
+ul li {
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+// tables
+table {
+	.bordered();
+	border-collapse:separate; 
+	border-spacing: 1rem;
+	
+
+	th {
+		text-align: left;
+		font-weight: bolder;
+		font-size: 1.7rem;
+	}
+}
+
+// *** begin main *** 
+main {
+
+	// layout
+	width: 41%;
+	max-width: 610px;
+	margin: 0 auto;
+
+	@media(max-width: 500px) {
+		width: 90%;
+	}
+
+	header, section {
+		margin: @section-margin 0;
+	}
+
+	header {
+		margin: @section-margin * 1.2 0;
+
+		nav {
+			.flex-row();
+			justify-content: space-between;
+		}
+
+		nav a {
+			font-size: @nav-font-size;
+		}
+	}
+
+	#intro {
+		.flex-row();
+		justify-content: space-between;
+
+		@media(max-width: 500px) {
+			.flex-column();
+		}
+
+		.avatar {
+			width: 20%;
+			.flex-column();
+
+			img {
+				filter: grayscale(1);
+
+				@media(max-width: 500px) {
+					width: 50%;
+					text-align: center;
+					align-self: center;
+					margin-bottom: @section-margin;
+				}
+			}
+		}
+
+		.intro-text {
+			width: 70%;
+		}
+
+		.avatar, .intro-text {
+			@media(max-width: 500px) {
+				width: 100%;
+			}
+		}
+
+		.links {
+			margin-top: 3rem;
+			width: 50%;
+			.flex-row();
+			justify-content: space-between;
+
+			@media(max-width: 500px) {
+				.flex-column();
+			}
+		}
+	}
+
+	#about {
+		.flex-row();
+		justify-content: space-between;
+
+		@media(max-width: 500px) {
+			.flex-column();
+		}
+
+		div {
+			width: 45%;
+
+			@media(max-width: 500px) {
+				width: 100%;
+				margin-bottom: @section-margin;
+			}
+		}
+	}
+
+	#history {
+		table {
+			width: 100%;
+		}
+	}
+
+	.button {
+		text-decoration: none;
+	}
+
+	footer {
+		margin-top: 80px;
+		text-align: center;
+	}
+}
+
+
+
