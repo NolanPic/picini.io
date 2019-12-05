@@ -273,6 +273,20 @@ main #intro .intro-text {
     width: 100%;
   }
 }
+main #intro .links {
+  margin-top: 3rem;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  main #intro .links {
+    display: flex;
+    flex-direction: column;
+  }
+}
 main #about {
   display: flex;
   flex-direction: row;

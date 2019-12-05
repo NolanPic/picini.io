@@ -221,6 +221,17 @@ main {
 				width: 100%;
 			}
 		}
+
+		.links {
+			margin-top: 3rem;
+			width: 50%;
+			.flex-row();
+			justify-content: space-between;
+
+			@media(max-width: 500px) {
+				.flex-column();
+			}
+		}
 	}
 
 	#about {
