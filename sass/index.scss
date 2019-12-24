@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|VT323&display=swap');
 
+/* DIS BE SCSS */
+
 // Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -61,33 +63,33 @@ html, body {
 }
 
 // *** variables *** 
-@main-font: 'Inconsolata', monospace;
-@headings-font: 'VT323', monospace;
-@main-font-color: rgb(211, 211, 211);
-@main-font-size: 1.6rem;
-@nav-font-size: 2.0rem;
-@section-margin: 35px;
-@dotted-border: 0.2em dotted @main-font-color;
+$main-font: 'Inconsolata', monospace;
+$headings-font: 'VT323', monospace;
+$main-font-color: rgb(211, 211, 211);
+$main-font-size: 1.6rem;
+$nav-font-size: 2.0rem;
+$section-margin: 35px;
+$dotted-border: 0.2em dotted $main-font-color;
 
 // *** mixins ***
-.flex-row() {
+@mixin flex-row() {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 
-.flex-column() {
+@mixin flex-column() {
 	display: flex;
 	flex-direction: column;
 }
 
-.bottom-bordered() {
-	border-bottom: @dotted-border;
+@mixin bottom-bordered() {
+	border-bottom: $dotted-border;
 	margin-bottom: 1rem;
 }
 
-.bordered() {
-	border: @dotted-border;
+@mixin bordered() {
+	border: $dotted-border;
 }
 
 // *** text ***
@@ -96,9 +98,9 @@ html {
 }
 
 body {
-	font-family: @main-font;
-	color: @main-font-color;
-	font-size: @main-font-size;
+	font-family: $main-font;
+	color: $main-font-color;
+	font-size: $main-font-size;
 	
 	background-color: rgb(26, 26, 26);
 }
@@ -108,14 +110,14 @@ p, span, a, li, blockquote {
 }
 
 a {
-	color: @main-font-color;
+	color: $main-font-color;
 	text-decoration: none;
-	.bottom-bordered();
+	@include bottom-bordered();
 }
 
 // headings
 h1, h2, h3, h4, h5, h6 {
-	font-family: @headings-font;
+	font-family: $headings-font;
 }
 
 h1 {
@@ -147,7 +149,7 @@ ul li {
 
 // tables
 table {
-	.bordered();
+	@include bordered();
 	border-collapse:separate; 
 	border-spacing: 1rem;
 	
@@ -172,33 +174,33 @@ main {
 	}
 
 	header, section {
-		margin: @section-margin 0;
+		margin: $section-margin 0;
 	}
 
 	header {
-		margin: @section-margin * 1.2 0;
+		margin: $section-margin * 1.2 0;
 
 		nav {
-			.flex-row();
+			@include flex-row();
 			justify-content: space-between;
 		}
 
 		nav a {
-			font-size: @nav-font-size;
+			font-size: $nav-font-size;
 		}
 	}
 
 	#intro {
-		.flex-row();
+		@include flex-row();
 		justify-content: space-between;
 
 		@media(max-width: 500px) {
-			.flex-column();
+			@include flex-column();
 		}
 
 		.avatar {
 			width: 20%;
-			.flex-column();
+			@include flex-column();
 
 			img {
 				filter: grayscale(1);
@@ -207,7 +209,7 @@ main {
 					width: 50%;
 					text-align: center;
 					align-self: center;
-					margin-bottom: @section-margin;
+					margin-bottom: $section-margin;
 				}
 			}
 		}
@@ -225,21 +227,21 @@ main {
 		.links {
 			margin-top: 3rem;
 			width: 50%;
-			.flex-row();
+			@include flex-row();
 			justify-content: space-between;
 
 			@media(max-width: 500px) {
-				.flex-column();
+				@include flex-column();
 			}
 		}
 	}
 
 	#about {
-		.flex-row();
+		@include flex-row();
 		justify-content: space-between;
 
 		@media(max-width: 500px) {
-			.flex-column();
+			@include flex-column();
 		}
 
 		div {
@@ -247,7 +249,7 @@ main {
 
 			@media(max-width: 500px) {
 				width: 100%;
-				margin-bottom: @section-margin;
+				margin-bottom: $section-margin;
 			}
 		}
 	}
