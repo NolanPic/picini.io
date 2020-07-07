@@ -226,6 +226,8 @@ main {
         flex-direction: column; } }
     main #intro .avatar {
       width: 20%;
+      border: 0.2em dotted lightgray;
+      border-radius: 1rem;
       display: flex;
       flex-direction: column; }
       main #intro .avatar img {

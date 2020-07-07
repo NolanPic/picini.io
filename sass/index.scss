@@ -288,6 +288,8 @@ main {
 
     .avatar {
       width: 20%;
+      @include bordered();
+      border-radius: 1rem;
       @include flex-column();
 
       img {
