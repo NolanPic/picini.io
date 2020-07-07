@@ -1,39 +1,32 @@
-<!DOCTYPE html>
+import React from "react";
+import avatar from "./images/me.jpeg";
+import "./sass/index.scss";
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nolan Picini</title>
-
-    <link rel="stylesheet" href="css/index.css" />
-
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
+function App() {
+  return (
     <main>
       <section id="intro">
-        <!-- <div class="avatar">
-          <img src="images/me.jpeg" alt="hey it's me" />
-        </div> -->
+        <div class="avatar">
+          <img src={avatar} alt="hey it's me" />
+        </div>
         <div class="intro-text">
           <h1>Nolan Picini</h1>
           <h3>Full-stack Web Developer 💻</h3>
         </div>
         <div class="links">
-          <a href="mailto:nolan@picini.io" class="button">Contact Nolan</a>
+          <a href="mailto:nolan@picini.io" class="button">
+            Contact Nolan
+          </a>
           <a
             href="https://www.linkedin.com/in/nolan-picini-30393799/"
             target="_blank"
             class="button"
-            >LinkedIn</a
           >
-          <a href="https://github.com/NolanPic" target="_blank" class="button"
-            >GitHub</a
-          >
+            LinkedIn
+          </a>
+          <a href="https://github.com/NolanPic" target="_blank" class="button">
+            GitHub
+          </a>
         </div>
       </section>
 
@@ -112,8 +105,9 @@
               <a
                 href="https://john-conways-game-of-life.now.sh/"
                 target="_blank"
-                >Conway's Game of Life</a
               >
+                Conway's Game of Life
+              </a>
             </td>
             <td>
               Implemented Conway’s Game of Life using modern web technologies
@@ -126,9 +120,9 @@
 
           <tr>
             <td>
-              <a href="https://neumorphic-todo.now.sh/" target="_blank"
-                >Neu todo</a
-              >
+              <a href="https://neumorphic-todo.now.sh/" target="_blank">
+                Neu todo
+              </a>
             </td>
             <td>How I todo</td>
             <td>React/styled components</td>
@@ -140,5 +134,7 @@
         <p>Copyright 2020. Fueled by coffee, books, and exploring the pnw. 🌧</p>
       </footer>
     </main>
-  </body>
-</html>
+  );
+}
+
+export default App;
