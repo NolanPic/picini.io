@@ -1,22 +1,89 @@
 @import url("https://fonts.googleapis.com/css?family=Inconsolata|VT323&display=swap");
-/* DIS BE SCSS */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -25,22 +92,35 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block; }
 
 body {
   line-height: 1; }
 
-ol, ul {
+ol,
+ul {
   list-style: none; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none; }
 
 table {
@@ -52,7 +132,8 @@ table {
   box-sizing: border-box;
   max-width: 100%; }
 
-html, body {
+html,
+body {
   height: 100%; }
 
 html {
@@ -61,10 +142,14 @@ html {
 body {
   font-family: "Inconsolata", monospace;
   color: lightgray;
-  font-size: 1.6rem;
+  font-size: 2rem;
   background-color: #1a1a1a; }
 
-p, span, a, li, blockquote {
+p,
+span,
+a,
+li,
+blockquote {
   line-height: 1.4; }
 
 a {
@@ -73,7 +158,12 @@ a {
   border-bottom: 0.2em dotted lightgray;
   margin-bottom: 1rem; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "VT323", monospace; }
 
 h1 {
@@ -89,7 +179,8 @@ h3 {
 h4 {
   font-size: 2rem; }
 
-h5, h6 {
+h5,
+h6 {
   font-size: 1.5rem; }
 
 ul li {
@@ -106,13 +197,14 @@ table {
     font-size: 1.7rem; }
 
 main {
-  width: 41%;
-  max-width: 610px;
+  width: 42%;
+  max-width: 800px;
   margin: 0 auto; }
-  @media (max-width: 500px) {
+  @media (max-width: 1170px) {
     main {
       width: 90%; } }
-  main header, main section {
+  main header,
+  main section {
     margin: 35px 0; }
   main header {
     margin: 42px 0; }
@@ -122,13 +214,13 @@ main {
       flex-wrap: wrap;
       justify-content: space-between; }
     main header nav a {
-      font-size: 2rem; }
+      font-size: 2.4rem; }
   main #intro {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between; }
-    @media (max-width: 500px) {
+    @media (max-width: 1170px) {
       main #intro {
         display: flex;
         flex-direction: column; } }
@@ -138,7 +230,7 @@ main {
       flex-direction: column; }
       main #intro .avatar img {
         filter: grayscale(1); }
-        @media (max-width: 500px) {
+        @media (max-width: 1170px) {
           main #intro .avatar img {
             width: 50%;
             text-align: center;
@@ -146,8 +238,9 @@ main {
             margin-bottom: 35px; } }
     main #intro .intro-text {
       width: 70%; }
-    @media (max-width: 500px) {
-      main #intro .avatar, main #intro .intro-text {
+    @media (max-width: 1170px) {
+      main #intro .avatar,
+      main #intro .intro-text {
         width: 100%; } }
     main #intro .links {
       margin-top: 3rem;
@@ -156,7 +249,7 @@ main {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between; }
-      @media (max-width: 500px) {
+      @media (max-width: 1170px) {
         main #intro .links {
           display: flex;
           flex-direction: column; } }
@@ -165,13 +258,13 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between; }
-    @media (max-width: 500px) {
+    @media (max-width: 1170px) {
       main #about {
         display: flex;
         flex-direction: column; } }
     main #about div {
       width: 45%; }
-      @media (max-width: 500px) {
+      @media (max-width: 1170px) {
         main #about div {
           width: 100%;
           margin-bottom: 35px; } }
