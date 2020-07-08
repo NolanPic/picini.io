@@ -78,12 +78,7 @@ const Home = () => {
 
           <tr>
             <td>
-              <a
-                href="https://john-conways-game-of-life.now.sh/"
-                target="_blank"
-              >
-                Conway's Game of Life
-              </a>
+              <Link to="/game-of-life">Conway's Game of Life</Link>
             </td>
             <td>
               Implemented Conway’s Game of Life using modern web technologies

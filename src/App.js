@@ -4,6 +4,7 @@ import avatar from "./images/me.jpeg";
 import "./sass/index.scss";
 import Home from "./pages/Home";
 import CMS from "./pages/CMS";
+import GameOfLife from "./pages/GameOfLife";
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
       <Switch>
         <Route path="/cms">
           <CMS />
+        </Route>
+        <Route path="/game-of-life">
+          <GameOfLife />
         </Route>
         <Route path="/">
           <Home />
