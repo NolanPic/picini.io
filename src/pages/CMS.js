@@ -1,6 +1,5 @@
 import React from "react";
 import cmsGif from "../images/cms.gif";
-import "../sass/cms.scss";
 
 const CMS = () => {
   return (
