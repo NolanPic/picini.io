@@ -1,5 +1,6 @@
 import React from "react";
 import cmsGif from "../images/cms.gif";
+import BackBtn from "../components/BackBtn";
 
 const CMS = () => {
   return (
@@ -44,6 +45,8 @@ const CMS = () => {
           Server, Windows Server
         </p>
       </section>
+
+      <BackBtn />
     </div>
   );
 };
