@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -50,7 +51,9 @@ const Home = () => {
           </tr>
 
           <tr>
-            <td>Proprietary CMS</td>
+            <td>
+              <Link to="/cms">Proprietary CMS</Link>
+            </td>
             <td>
               An in-house CMS built for 100s of clients to maintain their
               websites
@@ -75,12 +78,7 @@ const Home = () => {
 
           <tr>
             <td>
-              <a
-                href="https://john-conways-game-of-life.now.sh/"
-                target="_blank"
-              >
-                Conway's Game of Life
-              </a>
+              <Link to="/game-of-life">Conway's Game of Life</Link>
             </td>
             <td>
               Implemented Conway’s Game of Life using modern web technologies

@@ -1,0 +1,24 @@
+@mixin flex-row() {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@mixin flex-column() {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin bottom-bordered() {
+  border-bottom: $dotted-border;
+  margin-bottom: 1rem;
+}
+
+@mixin left-bordered() {
+  border-left: $dotted-border;
+  padding-left: 3rem;
+}
+
+@mixin bordered() {
+  border: $dotted-border;
+}

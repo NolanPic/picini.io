@@ -1,0 +1,12 @@
+.game-of-life {
+  .playing {
+    @include bordered();
+    border-radius: 0.7rem;
+    margin-bottom: 2.5rem;
+  }
+
+  ul {
+    @include left-bordered();
+    margin-bottom: 2.5rem;
+  }
+}
