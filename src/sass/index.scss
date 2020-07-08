@@ -198,6 +198,10 @@ a {
   @include bottom-bordered();
 }
 
+p {
+  padding-bottom: 1.5rem;
+}
+
 // headings
 h1,
 h2,
@@ -348,6 +352,12 @@ main {
   #history {
     table {
       width: 100%;
+    }
+  }
+
+  .page {
+    li {
+      padding-bottom: 1.5rem;
     }
   }
 

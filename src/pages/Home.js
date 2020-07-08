@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -50,7 +51,9 @@ const Home = () => {
           </tr>
 
           <tr>
-            <td>Proprietary CMS</td>
+            <td>
+              <Link to="/cms">Proprietary CMS</Link>
+            </td>
             <td>
               An in-house CMS built for 100s of clients to maintain their
               websites
