@@ -10,15 +10,7 @@ function App() {
     <main>
       <section id="intro">
         <div class="avatar">
-          <Link
-            to="/"
-            style={{
-              borderBottom: "none",
-              marginBottom: "0",
-              paddingBottom: "0",
-              lineHeight: "0",
-            }}
-          >
+          <Link to="/">
             <img src={avatar} alt="hey it's me" />
           </Link>
         </div>

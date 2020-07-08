@@ -123,6 +123,13 @@ main {
       border-radius: 1rem;
       @include flex-column();
 
+      a {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        line-height: 0;
+      }
+
       img {
         filter: grayscale(1);
 
