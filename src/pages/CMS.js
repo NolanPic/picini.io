@@ -9,10 +9,10 @@ const CMS = () => {
         <img className="walkthrough" src={cmsGif} alt="CMS walkthrough" />
 
         <p>
-          I worked at EfinityTech--a small web development company--where we
+          I worked at EfinityTech (a small web development company) where we
           developed our own CMS. VSM is a robust content management system for
-          the clients of EfinityTech. We would build websites for our clients on
-          this platform so that a client could log in and manage/update their
+          the company's clients. We would build websites for our clients on this
+          platform so that a client could log in and manage/update their
           website.
         </p>
 
