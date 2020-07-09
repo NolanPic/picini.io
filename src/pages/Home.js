@@ -98,7 +98,7 @@ const Home = () => {
                   Neu todo
                 </a>
               </td>
-              <td>How I todo</td>
+              <td>Simple todo in the style of Neumorphism</td>
               <td>React/styled components</td>
             </tr>
           </table>
