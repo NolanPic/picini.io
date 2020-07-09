@@ -19,7 +19,12 @@ function App() {
           <Link to="/">
             <h1>Nolan Picini</h1>
           </Link>
-          <h3>Full-stack Web Developer 💻</h3>
+          <h3>
+            Full-stack Web Developer{" "}
+            <span role="img" aria-label="laptop">
+              💻
+            </span>
+          </h3>
         </div>
         <div class="links">
           <a href="mailto:nolan@picini.io" class="button">
@@ -28,11 +33,17 @@ function App() {
           <a
             href="https://www.linkedin.com/in/nolan-picini-30393799/"
             target="_blank"
+            rel="noopener noreferrer"
             class="button"
           >
             LinkedIn
           </a>
-          <a href="https://github.com/NolanPic" target="_blank" class="button">
+          <a
+            href="https://github.com/NolanPic"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button"
+          >
             GitHub
           </a>
         </div>
@@ -51,7 +62,12 @@ function App() {
       </Switch>
 
       <footer>
-        <p>Copyright 2020. Fueled by coffee, books, and exploring the pnw. 🌧</p>
+        <p>
+          Copyright 2020. Fueled by coffee, books, and exploring the pnw.{" "}
+          <span role="img" aria-label="clouds raining">
+            🌧
+          </span>
+        </p>
       </footer>
     </main>
   );

@@ -94,7 +94,11 @@ const Home = () => {
 
             <tr>
               <td>
-                <a href="https://neumorphic-todo.now.sh/" target="_blank">
+                <a
+                  href="https://neumorphic-todo.now.sh/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Neu todo
                 </a>
               </td>
