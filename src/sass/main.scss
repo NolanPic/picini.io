@@ -68,8 +68,22 @@ ul li {
 }
 
 // tables
-table {
+.table-wrap {
   @include bordered();
+  overflow-x: auto;
+
+  // horiz scroll message
+  @media (max-width: 615px) {
+    &::after {
+      content: "Scroll →";
+      display: block;
+      padding-left: 1rem;
+      color: $faint-font-color;
+    }
+  }
+}
+
+table {
   border-collapse: separate;
   border-spacing: 1rem;
 
@@ -77,6 +91,19 @@ table {
     text-align: left;
     font-weight: bolder;
     font-size: 1.7rem;
+  }
+
+  td {
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    border-bottom: $dotted-border;
+    min-width: 170px;
+  }
+
+  tr:last-child {
+    td {
+      border-bottom: none;
+    }
   }
 }
 
@@ -113,17 +140,16 @@ main {
     @include flex-row();
     justify-content: space-between;
 
-    @media (max-width: 1170px) {
+    @media (max-width: 600px) {
       @include flex-column();
     }
 
     .avatar {
       width: 20%;
-      @include bordered();
-      border-radius: 1rem;
       @include flex-column();
 
       a {
+        @include flex-column();
         border-bottom: none;
         margin-bottom: 0;
         padding-bottom: 0;
@@ -132,10 +158,12 @@ main {
 
       img {
         filter: grayscale(1);
+        @include bordered();
+        border-radius: 1rem;
 
         @media (max-width: 1170px) {
-          width: 50%;
-          text-align: center;
+          width: 300px;
+          max-width: 90%;
           align-self: center;
           margin-bottom: $section-margin;
         }
@@ -148,7 +176,7 @@ main {
 
     .avatar,
     .intro-text {
-      @media (max-width: 1170px) {
+      @media (max-width: 600px) {
         width: 100%;
       }
     }
