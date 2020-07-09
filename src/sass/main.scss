@@ -68,8 +68,12 @@ ul li {
 }
 
 // tables
-table {
+.table-wrap {
   @include bordered();
+  overflow-x: auto;
+}
+
+table {
   border-collapse: separate;
   border-spacing: 1rem;
 
