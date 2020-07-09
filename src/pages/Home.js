@@ -94,11 +94,15 @@ const Home = () => {
 
             <tr>
               <td>
-                <a href="https://neumorphic-todo.now.sh/" target="_blank">
+                <a
+                  href="https://neumorphic-todo.now.sh/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Neu todo
                 </a>
               </td>
-              <td>How I todo</td>
+              <td>Simple todo in the style of Neumorphism</td>
               <td>React/styled components</td>
             </tr>
           </table>
