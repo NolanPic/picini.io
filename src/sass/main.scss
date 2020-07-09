@@ -124,6 +124,7 @@ main {
       @include flex-column();
 
       a {
+        @include flex-column();
         border-bottom: none;
         margin-bottom: 0;
         padding-bottom: 0;
