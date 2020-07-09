@@ -125,14 +125,12 @@ main {
     @include flex-row();
     justify-content: space-between;
 
-    @media (max-width: 1170px) {
+    @media (max-width: 600px) {
       @include flex-column();
     }
 
     .avatar {
       width: 20%;
-      @include bordered();
-      border-radius: 1rem;
       @include flex-column();
 
       a {
@@ -145,10 +143,12 @@ main {
 
       img {
         filter: grayscale(1);
+        @include bordered();
+        border-radius: 1rem;
 
         @media (max-width: 1170px) {
-          width: 50%;
-          text-align: center;
+          width: 300px;
+          max-width: 90%;
           align-self: center;
           margin-bottom: $section-margin;
         }
@@ -161,7 +161,7 @@ main {
 
     .avatar,
     .intro-text {
-      @media (max-width: 1170px) {
+      @media (max-width: 600px) {
         width: 100%;
       }
     }
