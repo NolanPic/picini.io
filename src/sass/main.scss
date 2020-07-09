@@ -78,6 +78,18 @@ table {
     font-weight: bolder;
     font-size: 1.7rem;
   }
+
+  td {
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    border-bottom: $dotted-border;
+  }
+
+  tr:last-child {
+    td {
+      border-bottom: none;
+    }
+  }
 }
 
 // *** begin main ***
