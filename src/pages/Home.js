@@ -44,7 +44,7 @@ const Home = () => {
       </section>
 
       <section id="portfolio">
-        <h2>Portfolio</h2>
+        <h2>Projects</h2>
         <div className="table-wrap">
           <table>
             <tr>
