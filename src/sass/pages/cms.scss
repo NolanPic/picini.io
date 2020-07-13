@@ -2,6 +2,7 @@
   img.walkthrough {
     @include bordered();
     border-radius: 0.7rem;
+    box-shadow: $box-shadow;
     margin-bottom: 2.5rem;
   }
 

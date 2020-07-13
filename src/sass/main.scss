@@ -122,6 +122,7 @@ main {
         filter: grayscale(1);
         @include bordered();
         border-radius: 1rem;
+        box-shadow: $box-shadow;
 
         @media (max-width: 1170px) {
           width: 300px;
