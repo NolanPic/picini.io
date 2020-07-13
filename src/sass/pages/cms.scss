@@ -8,6 +8,7 @@
 
   ul {
     @include left-bordered();
+    border-color: $contrast-color;
     margin-bottom: 2.5rem;
   }
 }
