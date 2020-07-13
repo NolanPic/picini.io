@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import LinkBtn from "../components/LinkBtn";
 
 const Home = () => {
   return (
@@ -45,9 +46,7 @@ const Home = () => {
         <div className="card-wrap">
           {/* CMS card */}
           <div className="card">
-            <h3 className="card-title">
-              <Link to="/cms">Proprietary CMS</Link>
-            </h3>
+            <h3 className="card-title">Proprietary CMS</h3>
 
             <div className="description">
               <h4>Description</h4>
@@ -64,6 +63,8 @@ const Home = () => {
                 with ASP.NET, SQL, JS, Bootstrap
               </p>
             </div>
+
+            <LinkBtn to="/cms">More &gt;</LinkBtn>
           </div>
 
           {/* Business directory card */}
@@ -88,9 +89,7 @@ const Home = () => {
 
           {/* Game of Life card */}
           <div className="card">
-            <h3 className="card-title">
-              <Link to="/game-of-life">Conway's Game of Life</Link>
-            </h3>
+            <h3 className="card-title">Conway's Game of Life</h3>
             <div className="description">
               <h4>Description</h4>
               <p>
@@ -105,19 +104,13 @@ const Home = () => {
                 CSS Grid
               </p>
             </div>
+
+            <LinkBtn to="/game-of-life">More &gt;</LinkBtn>
           </div>
 
           {/* Neumorphic todo card */}
           <div className="card">
-            <h3 className="card-title">
-              <a
-                href="https://neumorphic-todo.now.sh/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Neu todo
-              </a>
-            </h3>
+            <h3 className="card-title">Neu todo</h3>
             <div className="description">
               <h4>Description</h4>
               <p>Simple todo in the style of Neumorphism.</p>
@@ -127,6 +120,8 @@ const Home = () => {
               <h4>Skills used</h4>
               <p>React/styled components</p>
             </div>
+
+            <LinkBtn to="https://neumorphic-todo.now.sh/">View &gt;</LinkBtn>
           </div>
         </div>
       </section>

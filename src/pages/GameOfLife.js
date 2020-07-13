@@ -1,6 +1,6 @@
 import React from "react";
 import gameOfLife from "../images/game-of-life.gif";
-import BackBtn from "../components/BackBtn";
+import LinkBtn from "../components/LinkBtn";
 
 const GameOfLife = () => {
   return (
@@ -59,7 +59,7 @@ const GameOfLife = () => {
         </ul>
       </p>
 
-      <BackBtn />
+      <LinkBtn to="/">&lt; Back</LinkBtn>
     </div>
   );
 };
