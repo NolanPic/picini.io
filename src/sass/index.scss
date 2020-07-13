@@ -12,6 +12,9 @@
 
 @import "main.scss";
 
+// *** components ***
+@import "components/card.scss";
+
 // *** pages ***
 @import "pages/cms.scss";
 @import "pages/game-of-life.scss";

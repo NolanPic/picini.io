@@ -69,46 +69,6 @@ ul li {
   list-style-position: inside;
 }
 
-// tables
-.table-wrap {
-  @include bordered();
-  overflow-x: auto;
-
-  // horiz scroll message
-  @media (max-width: 615px) {
-    &::after {
-      content: "Scroll →";
-      display: block;
-      padding-left: 1rem;
-      color: $faint-font-color;
-    }
-  }
-}
-
-table {
-  border-collapse: separate;
-  border-spacing: 1rem;
-
-  th {
-    text-align: left;
-    font-weight: bolder;
-    font-size: 1.7rem;
-  }
-
-  td {
-    padding-bottom: 2rem;
-    padding-right: 2rem;
-    border-bottom: $dotted-border;
-    min-width: 170px;
-  }
-
-  tr:last-child {
-    td {
-      border-bottom: none;
-    }
-  }
-}
-
 // *** begin main ***
 main {
   // layout
@@ -210,12 +170,6 @@ main {
         width: 100%;
         margin-bottom: $section-margin;
       }
-    }
-  }
-
-  #history {
-    table {
-      width: 100%;
     }
   }
 

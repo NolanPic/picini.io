@@ -1,0 +1,17 @@
+.card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.card {
+  // margin-top: 1rem;
+  margin: 1rem;
+  border: $dotted-border;
+  border-radius: 1rem;
+  padding: 3rem;
+  width: calc(50% - 2rem);
+  @media (max-width: 1620px) {
+    width: 100%;
+  }
+}
