@@ -33,7 +33,7 @@ const Home = () => {
               <ul>
                 <li>Years: 6.5</li>
                 <li>Title: Web developer</li>
-                <li>Skills: ASP.NET/JS</li>
+                <li>Skills: ASP.NET/JS/SQL</li>
               </ul>
             </div>
           </div>
@@ -80,8 +80,8 @@ const Home = () => {
             <div className="work-done">
               <h4>Skills used</h4>
               <p>
-                Utilized Vue, Google Maps API, and REST API. Where SEO was
-                important, used ASP.NET server-driven pages
+                Utilized Vue, Google Maps API, and custom REST API. Where SEO
+                was important, used ASP.NET server-driven pages
               </p>
             </div>
           </div>
