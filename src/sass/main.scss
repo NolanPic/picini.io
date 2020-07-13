@@ -22,7 +22,7 @@ blockquote {
 }
 
 a {
-  color: $main-font-color;
+  color: $contrast-color; //$main-font-color;
   text-decoration: none;
   @include bottom-bordered();
 }
@@ -104,6 +104,10 @@ main {
 
     @media (max-width: 600px) {
       @include flex-column();
+    }
+
+    a h1 {
+      color: $main-font-color;
     }
 
     .avatar {
