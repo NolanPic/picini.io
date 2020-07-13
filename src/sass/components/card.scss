@@ -13,6 +13,10 @@
   width: calc(50% - 2rem);
   box-shadow: $box-shadow;
 
+  &:hover {
+    border-color: $contrast-color;
+  }
+
   @media (max-width: 1620px) {
     width: 100%;
   }
