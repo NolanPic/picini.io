@@ -58,7 +58,7 @@ const Home = () => {
             </div>
 
             <div className="work-done">
-              <h4>Work done/skills used</h4>
+              <h4>Skills used</h4>
               <p>
                 Contributed to development and maintenance of a proprietary CMS
                 with ASP.NET, SQL, JS, Bootstrap
@@ -78,7 +78,7 @@ const Home = () => {
             </div>
 
             <div className="work-done">
-              <h4>Work done/skills used</h4>
+              <h4>Skills used</h4>
               <p>
                 Utilized Vue, Google Maps API, and REST API. Where SEO was
                 important, used ASP.NET server-driven pages
@@ -99,7 +99,7 @@ const Home = () => {
             </div>
 
             <div className="work-done">
-              <h4>Work done/skills used</h4>
+              <h4>Skills used</h4>
               <p>
                 Wrote game logic in vanilla JS, UI in React, and grid utilizing
                 CSS Grid
@@ -124,7 +124,7 @@ const Home = () => {
             </div>
 
             <div className="work-done">
-              <h4>Work done/skills used</h4>
+              <h4>Skills used</h4>
               <p>React/styled components</p>
             </div>
           </div>
