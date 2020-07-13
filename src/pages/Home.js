@@ -18,8 +18,8 @@ const Home = () => {
           <ul>
             <li>JS/React/Vue/jQuery</li>
             <li>ASP.NET/C#</li>
-            <li>SQL (SQL Server, Postgres)</li>
-            <li>Debugging in Chrome DevTools</li>
+            <li>SQL</li>
+            <li>Chrome DevTools</li>
           </ul>
         </div>
       </section>
