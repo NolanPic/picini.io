@@ -13,7 +13,7 @@ const Home = () => {
           </p>
         </div>
         <div>
-          <h2>Skilled with</h2>
+          <h2>Skills</h2>
           <ul>
             <li>JS/React/Vue/jQuery</li>
             <li>ASP.NET/C#</li>
