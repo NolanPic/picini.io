@@ -15,12 +15,14 @@ p,
 span,
 a,
 li,
+td,
 blockquote {
-  line-height: 1.4;
+  line-height: 1.6;
+  letter-spacing: 0.1rem;
 }
 
 a {
-  color: $main-font-color;
+  color: $contrast-color; //$main-font-color;
   text-decoration: none;
   @include bottom-bordered();
 }
@@ -53,7 +55,7 @@ h3 {
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 
 h5,
@@ -65,46 +67,6 @@ h6 {
 ul li {
   list-style-type: square;
   list-style-position: inside;
-}
-
-// tables
-.table-wrap {
-  @include bordered();
-  overflow-x: auto;
-
-  // horiz scroll message
-  @media (max-width: 615px) {
-    &::after {
-      content: "Scroll →";
-      display: block;
-      padding-left: 1rem;
-      color: $faint-font-color;
-    }
-  }
-}
-
-table {
-  border-collapse: separate;
-  border-spacing: 1rem;
-
-  th {
-    text-align: left;
-    font-weight: bolder;
-    font-size: 1.7rem;
-  }
-
-  td {
-    padding-bottom: 2rem;
-    padding-right: 2rem;
-    border-bottom: $dotted-border;
-    min-width: 170px;
-  }
-
-  tr:last-child {
-    td {
-      border-bottom: none;
-    }
-  }
 }
 
 // *** begin main ***
@@ -144,6 +106,10 @@ main {
       @include flex-column();
     }
 
+    a h1 {
+      color: $main-font-color;
+    }
+
     .avatar {
       width: 20%;
       @include flex-column();
@@ -160,6 +126,7 @@ main {
         filter: grayscale(1);
         @include bordered();
         border-radius: 1rem;
+        box-shadow: $box-shadow;
 
         @media (max-width: 1170px) {
           width: 300px;
@@ -179,6 +146,10 @@ main {
       @media (max-width: 600px) {
         width: 100%;
       }
+
+      h1 {
+        margin-bottom: 0;
+      }
     }
 
     .links {
@@ -187,7 +158,7 @@ main {
       @include flex-row();
       justify-content: space-between;
 
-      @media (max-width: 1170px) {
+      @media (max-width: 1600px) {
         @include flex-column();
       }
     }
@@ -204,16 +175,10 @@ main {
     div {
       width: 45%;
 
-      @media (max-width: 1170px) {
+      @media (max-width: 1470px) {
         width: 100%;
         margin-bottom: $section-margin;
       }
-    }
-  }
-
-  #history {
-    table {
-      width: 100%;
     }
   }
 

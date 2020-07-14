@@ -1,6 +1,6 @@
 import React from "react";
 import cmsGif from "../images/cms.gif";
-import BackBtn from "../components/BackBtn";
+import LinkBtn from "../components/LinkBtn";
 
 const CMS = () => {
   return (
@@ -46,7 +46,7 @@ const CMS = () => {
         </p>
       </section>
 
-      <BackBtn />
+      <LinkBtn to="/">&lt; Back</LinkBtn>
     </div>
   );
 };
