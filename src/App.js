@@ -5,8 +5,12 @@ import "./sass/index.scss";
 import Home from "./pages/Home";
 import CMS from "./pages/CMS";
 import GameOfLife from "./pages/GameOfLife";
+import { useTracking } from "./hooks/useTracking";
 
 function App() {
+  // analytics
+  useTracking("UA-164019317-2");
+
   return (
     <main>
       <section id="intro">
