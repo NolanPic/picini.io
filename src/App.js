@@ -5,17 +5,21 @@ import "./sass/index.scss";
 import Home from "./pages/Home";
 import CMS from "./pages/CMS";
 import GameOfLife from "./pages/GameOfLife";
+import { useTracking } from "./hooks/useTracking";
 
 function App() {
+  // analytics
+  useTracking("UA-164019317-2");
+
   return (
     <main>
       <section id="intro">
-        <div class="avatar">
+        <div className="avatar">
           <Link to="/">
             <img src={avatar} alt="hey it's me" />
           </Link>
         </div>
-        <div class="intro-text">
+        <div className="intro-text">
           <Link to="/">
             <h1>Nolan Picini</h1>
           </Link>
@@ -26,15 +30,15 @@ function App() {
             </span>
           </h3>
         </div>
-        <div class="links">
-          <a href="mailto:nolan@picini.io" class="button">
+        <div className="links">
+          <a href="mailto:nolan@picini.io" className="button">
             Contact Nolan
           </a>
           <a
             href="https://www.linkedin.com/in/nolan-picini-30393799/"
             target="_blank"
             rel="noopener noreferrer"
-            class="button"
+            className="button"
           >
             LinkedIn
           </a>
@@ -42,7 +46,7 @@ function App() {
             href="https://github.com/NolanPic"
             target="_blank"
             rel="noopener noreferrer"
-            class="button"
+            className="button"
           >
             GitHub
           </a>
