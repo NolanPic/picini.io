@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
-import avatar from "./images/me.jpeg";
+import avatar from "./images/me-7-16-2020_sm.jpeg";
 import "./sass/index.scss";
 import Home from "./pages/Home";
 import CMS from "./pages/CMS";
