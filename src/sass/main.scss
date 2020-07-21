@@ -100,7 +100,7 @@ main {
 
   #intro {
     @include flex-row();
-    justify-content: space-between;
+    justify-content: flex-start;
 
     @media (max-width: 600px) {
       @include flex-column();
@@ -112,6 +112,7 @@ main {
 
     .avatar {
       width: 20%;
+      margin-right: 3rem;
       @include flex-column();
 
       a {
