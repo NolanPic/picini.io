@@ -24,7 +24,7 @@ function App() {
             <h1>Nolan Picini</h1>
           </Link>
           <h3>
-            Full-stack Web Developer{" "}
+            Full-stack Engineer{" "}
             <span role="img" aria-label="laptop">
               💻
             </span>
