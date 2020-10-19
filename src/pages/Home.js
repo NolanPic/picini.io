@@ -53,8 +53,7 @@ const Home = () => {
             <div className="description">
               <h4>Description</h4>
               <p>
-                An in-house CMS built for 100s of clients to maintain their
-                websites.
+                An in-house CMS built for clients to maintain their websites.
               </p>
             </div>
 
