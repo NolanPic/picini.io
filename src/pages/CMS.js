@@ -41,8 +41,8 @@ const CMS = () => {
         <p>
           Technologies used included:
           <br />
-          Vanilla JS, jQuery, Vue, Bootstrap, C#, ASP.NET Web Forms/Web API, SQL
-          Server, Windows Server
+          Vanilla JS, Vue, Bootstrap, C#, ASP.NET Web Forms/Web API, SQL Server,
+          Windows Server
         </p>
       </section>
 
