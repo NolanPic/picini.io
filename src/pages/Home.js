@@ -8,17 +8,20 @@ const Home = () => {
         <div>
           <h2>About</h2>
           <p>
-            I am a full-stack web developer building modern web applications. I
-            appreciate good design, both visually and in code. Always curious.
+            I am a full-stack engineer with 7 years of experience in the web
+            industry. I work in both modern and legacy codebases, and can
+            quickly learn tools and languages.
           </p>
         </div>
         <div>
           <h2>Skills</h2>
           <ul>
-            <li>JS/React/Vue/jQuery</li>
+            <li>Javascript (7 years)</li>
+            <li>React/Vue</li>
+            <li>NodeJS/REST</li>
             <li>ASP.NET/C#</li>
             <li>SQL</li>
-            <li>Chrome DevTools</li>
+            <li>Python</li>
           </ul>
         </div>
       </section>
